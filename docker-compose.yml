@@ -1,0 +1,21 @@
+version: '3.9'
+name: pg-dba
+
+services:
+
+  db:
+    container_name: db
+    image: postgres
+    restart: always
+    shm_size: 128mb # set shared memory limit when using docker-compose
+    environment:
+      POSTGRES_PASSWORD: cool-postgres-course
+    ports:
+      - 5433:5432 # Different source port to not compete with local postgres installation
+  
+  frontend:
+    container_name: frontend
+    build: .
+    restart: always
+    ports:
+      - 8888:8888
