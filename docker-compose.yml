@@ -19,3 +19,13 @@ services:
     restart: always
     ports:
       - 8888:8888
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:8.3
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=postgres@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=cool-postgres-course
