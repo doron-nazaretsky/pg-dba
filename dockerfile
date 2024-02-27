@@ -12,5 +12,5 @@ RUN apt update && \
 RUN pip3 install -r requirments.txt && \
     python3 -m bash_kernel.install
 
-COPY lessons .
+COPY lessons ./lessons
 COPY --chown=jovyan --chmod=600 pg-files/.pgpass .
