@@ -5,7 +5,9 @@ services:
 
   db:
     container_name: db
-    image: postgres
+    build:
+      context: .
+      dockerfile: db-dockerfile
     restart: always
     shm_size: 128mb # set shared memory limit when using docker-compose
     environment:
@@ -17,16 +19,20 @@ services:
     # volumes:
     #   - ./db-data:/var/lib/postgresql/data 
   
-  frontend:
-    container_name: frontend
-    build: .
+  notebook:
+    container_name: notebook
+    build:
+      context: .
+      dockerfile: notebook-dockerfile
     restart: always
     ports:
       - 8888:8888
 
   pgadmin:
     container_name: pgadmin
-    image: dpage/pgadmin4:8.3
+    build:
+      context: .
+      dockerfile: pgadmin-dockerfile
     restart: always
     ports:
       - 80:80
