@@ -12,6 +12,10 @@ services:
       POSTGRES_PASSWORD: cool-postgres-course
     ports:
       - 5433:5432 # Different source port to not compete with local postgres installation
+    # Uncomment the following if you really want to keep your postgres data around
+    # on your disk. This will write to a local directory called 'db-data'
+    # volumes:
+    #   - ./db-data:/var/lib/postgresql/data 
   
   frontend:
     container_name: frontend
