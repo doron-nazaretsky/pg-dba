@@ -18,6 +18,8 @@ services:
     # on your disk. This will write to a local directory called 'db-data'
     # volumes:
     #   - ./db-data:/var/lib/postgresql/data 
+    # Uncomment the following to change the log debug level
+    # command: ["-d", "5"]
   
   notebook:
     container_name: notebook
