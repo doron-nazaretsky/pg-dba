@@ -1,0 +1,12 @@
+FROM debian:latest
+
+# Install a specific version with PostgreSQL ATP Repository
+RUN apt update && \
+    apt install procps -y && \
+    apt install exa -y && \
+    apt install nano -y && \
+    apt install -y postgresql-common && \
+    yes '' | /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh && \
+    apt update && \
+    apt install postgresql-16 -y
+    
