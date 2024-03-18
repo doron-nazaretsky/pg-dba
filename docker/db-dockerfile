@@ -1,4 +1,5 @@
 FROM postgres:16-bookworm
 
 RUN apt update && \
-    apt install procps -y
+    apt install procps -y && \
+    apt install nano
