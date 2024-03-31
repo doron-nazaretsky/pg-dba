@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2024-03-31T10:35:52.240Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="4EW9MgOSwMpTKt7R3RPY" version="24.2.1" type="google">
+  <diagram name="LSN" id="oGgIKcy1KZ6UAMiOBFBA">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="J8uCGS3BcCjM7RrEL_1T-0" />
+        <mxCell id="J8uCGS3BcCjM7RrEL_1T-1" parent="J8uCGS3BcCjM7RrEL_1T-0" />
+        <mxCell id="CDzzlhxysZaXLjObfC29-0" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="J8uCGS3BcCjM7RrEL_1T-1">
+          <mxGeometry x="80" y="80" width="680" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="J8uCGS3BcCjM7RrEL_1T-1" source="CDzzlhxysZaXLjObfC29-2" target="CDzzlhxysZaXLjObfC29-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.544;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="J8uCGS3BcCjM7RrEL_1T-1" source="CDzzlhxysZaXLjObfC29-2" target="CDzzlhxysZaXLjObfC29-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="J8uCGS3BcCjM7RrEL_1T-1" source="CDzzlhxysZaXLjObfC29-2" target="CDzzlhxysZaXLjObfC29-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-2" value="&lt;span style=&quot;color: rgb(55, 65, 81); font-family: Arimo, ui-sans-serif, system-ui, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 20px; text-align: start;&quot;&gt;XXXXXXXX/YY/ZZZZZZ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="J8uCGS3BcCjM7RrEL_1T-1">
+          <mxGeometry x="305" y="140" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-3" value="High Part&lt;br&gt;(Matches WAL File)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="J8uCGS3BcCjM7RrEL_1T-1">
+          <mxGeometry x="130" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-5" value="Low Part&lt;br&gt;(Matches WAL File)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="J8uCGS3BcCjM7RrEL_1T-1">
+          <mxGeometry x="360" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-7" value="Offset&lt;br&gt;(Position in WAL file)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="J8uCGS3BcCjM7RrEL_1T-1">
+          <mxGeometry x="590" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

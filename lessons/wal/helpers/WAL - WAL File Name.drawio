@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-03-31T10:38:31.940Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="eD2-sG1xoF7sMIJwMKTi" version="24.2.1" type="google">
+  <diagram name="LSN" id="oGgIKcy1KZ6UAMiOBFBA">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="J8uCGS3BcCjM7RrEL_1T-0" />
+        <mxCell id="J8uCGS3BcCjM7RrEL_1T-1" parent="J8uCGS3BcCjM7RrEL_1T-0" />
+        <mxCell id="jK2qT5hh06bEcmYc28TM-0" value="" style="group" connectable="0" vertex="1" parent="J8uCGS3BcCjM7RrEL_1T-1">
+          <mxGeometry x="80" y="80" width="970" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-0" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="jK2qT5hh06bEcmYc28TM-0">
+          <mxGeometry width="970.0000000000001" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="jK2qT5hh06bEcmYc28TM-0" source="CDzzlhxysZaXLjObfC29-2" target="CDzzlhxysZaXLjObfC29-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="171.1764705882353" y="128.9189189189189" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.544;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="jK2qT5hh06bEcmYc28TM-0" source="CDzzlhxysZaXLjObfC29-2" target="CDzzlhxysZaXLjObfC29-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="499.264705882353" y="186.2162162162162" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="jK2qT5hh06bEcmYc28TM-0" source="CDzzlhxysZaXLjObfC29-2" target="CDzzlhxysZaXLjObfC29-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-2" value="&lt;span style=&quot;color: rgb(55, 65, 81); font-family: Arimo, ui-sans-serif, system-ui, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 20px; text-align: start;&quot;&gt;TTTTTTTT/XXXXXXXX/000000/YY&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="jK2qT5hh06bEcmYc28TM-0">
+          <mxGeometry x="320.9558823529412" y="85.94594594594595" width="328.0882352941177" height="85.94594594594595" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-3" value="Time Line ID" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="jK2qT5hh06bEcmYc28TM-0">
+          <mxGeometry x="71.32352941176471" y="286.4864864864865" width="199.7058823529412" height="85.94594594594595" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-5" value="&lt;div&gt;High Part&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="jK2qT5hh06bEcmYc28TM-0">
+          <mxGeometry x="399.4117647058824" y="286.4864864864865" width="199.7058823529412" height="85.94594594594595" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzzlhxysZaXLjObfC29-7" value="Low Part" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="jK2qT5hh06bEcmYc28TM-0">
+          <mxGeometry x="727.5" y="286.4864864864865" width="199.7058823529412" height="85.94594594594595" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
