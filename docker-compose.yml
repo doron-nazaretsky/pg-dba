@@ -16,11 +16,14 @@ services:
       - 5433:5432 # Different source port to not compete with local postgres installation
     # Uncomment the following if you really want to keep your postgres data around
     # on your disk. This will write to a local directory called 'db-data'
-    # volumes:
-    #   - ./db-data:/var/lib/postgresql/data 
+    volumes:
+      - ./db-data:/var/lib/postgresql/data 
     # Uncomment the following to change the log debug level
-    # command: ["-d", "5"]
-  
+    command: [
+      "-c", "logging_collector=on",
+      "-c", "max_parallel_workers_per_gather=0"
+    ]
+
   notebook:
     container_name: notebook
     build:
@@ -43,3 +46,5 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=postgres@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=cool-postgres-course
+    # volumes:
+    #   - ./lessons:/home/jovyan/lessons # For development purposes
