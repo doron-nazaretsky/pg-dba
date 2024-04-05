@@ -9,4 +9,6 @@ RUN apt update && \
     yes '' | /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh && \
     apt update && \
     apt install postgresql-16 -y
-    
+
+# Add native postgres command line tools to path
+RUN echo 'export PATH=$PATH:/usr/lib/postgresql/16/bin' >> ~/.bashrc
