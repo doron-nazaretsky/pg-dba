@@ -30,8 +30,8 @@ bootstrap:
       - host all,replication all 0.0.0.0/0 md5
 
 postgresql:
-  listen: 127.0.0.1,pg-1:5432
-  connect_address: pg-1:5432
+  listen: 127.0.0.1,<pg-host>:5432
+  connect_address: <pg-host>:5432
   data_dir: data/postgresql0
   authentication:
     replication:
