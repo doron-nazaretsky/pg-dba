@@ -1,0 +1,29 @@
+FROM debian:latest
+
+# Install a specific version with PostgreSQL ATP Repository
+RUN apt update && \
+    apt install procps -y && \
+    apt install exa -y && \
+    apt install nano -y && \
+    apt install -y postgresql-common && \
+    yes '' | /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh && \
+    apt update && \
+    apt install postgresql-16 -y && \
+    apt install patroni -y && \
+    apt install etcd-client -y && \
+    apt install less
+
+
+# Add native postgres command line tools to path
+# RUN echo 'export PATH=$PATH:/usr/lib/postgresql/16/bin' >> /etc/profile.d/pg-to-path.sh
+RUN echo 'export PATH=$PATH:/usr/lib/postgresql/16/bin' >> /etc/bash.bashrc
+
+# Add patroni configuration
+ENV MY_PATRONI_CONFIG_FILE=/var/lib/postgresql/patroni.yaml
+COPY --chown=postgres:postrges ./docker/helpers/patroni.yaml $MY_PATRONI_CONFIG_FILE
+COPY --chown=postgres:postgres ./docker/helpers/patroni-entry.sh /patroni-entry.sh
+RUN chmod +x /patroni-entry.sh
+
+WORKDIR /var/lib/postgresql/
+
+CMD ["sleep", "infinity"]

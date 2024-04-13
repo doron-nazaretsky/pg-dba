@@ -1,0 +1,37 @@
+version: '3.9'
+name: pg-dba-ha
+
+x-variables:
+  etcd_settings: &etcd_settings
+    build:
+      context: .
+      dockerfile: etcd-dockerfile
+    restart: always
+    ports:
+      - 2379
+  pg_settings: &pg_settings
+    build:
+      context: .
+      dockerfile: patroni-dockerfile
+    restart: always
+
+services:
+  etcd-1:
+    <<: *etcd_settings
+    container_name: etcd-1
+    hostname: etcd-1
+
+  etcd-2:
+    <<: *etcd_settings
+    container_name: etcd-2
+    hostname: etcd-2
+
+  pg-1:
+    <<: *pg_settings
+    container_name: pg-1
+    hostname: pg-1
+
+  pg-2:
+    <<: *pg_settings
+    container_name: pg-2
+    hostname: pg-2

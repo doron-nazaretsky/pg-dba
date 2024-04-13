@@ -1,0 +1,54 @@
+scope: batman
+namespace: /service
+name: <pg-host>
+
+restapi:
+  listen: 0.0.0.0:8008
+  connect_address: <pg-host>:8008
+
+ctl:
+ insecure: false # Allow connections to Patroni REST API without verifying certificates
+
+etcd:
+  host: <etcd-host>:2379
+
+# The bootstrap configuration. Works only when the cluster is not yet initialized.
+# If the cluster is already initialized, all changes in the `bootstrap` section are ignored!
+bootstrap:
+  initdb:  
+  - encoding: UTF8
+  - data-checksums
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576
+    primary_start_timeout: 0
+    postgresql:
+      use_pg_rewind: true
+      pg_hba:
+      - host all,replication all 0.0.0.0/0 md5
+
+postgresql:
+  listen: 127.0.0.1,pg-1:5432
+  connect_address: pg-1:5432
+  data_dir: data/postgresql0
+  authentication:
+    replication:
+      username: replicator
+      password: rep-pass
+    superuser:
+      username: postgres
+      password: zalando
+    rewind:
+      username: rewind_user
+      password: rewind_password
+# Can be used to make sure more than one Postgres node is not elected to be primary due to Patroni bug / error
+# By default on
+watchdog: 
+  mode: off
+
+tags:
+    noloadbalance: false # Only HA
+    nostream: false # Change to file based continuous recovery
+    # replicatefrom: # Create cascading replication with this
