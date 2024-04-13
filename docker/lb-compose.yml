@@ -73,3 +73,16 @@ services:
       context: ..
       dockerfile: docker/haproxy-dockerfile
     restart: always
+
+  client:
+    container_name: client
+    hostname: client
+    build:
+      context: ..
+      dockerfile: docker/pgadmin-dockerfile
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=postgres@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=cool-postgres-course
