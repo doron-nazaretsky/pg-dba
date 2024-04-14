@@ -49,6 +49,5 @@ watchdog:
   mode: off
 
 tags:
-    noloadbalance: false # Only HA
     nostream: false # Change to file based continuous recovery
     # replicatefrom: # Create cascading replication with this
