@@ -1,0 +1,32 @@
+version: '3.9'
+name: pg-dba-lr
+
+x-pg_settings: &pg_settings
+  image: postgres:16-bookworm
+  restart: always
+  shm_size: 128mb # set shared memory limit when using docker-compose
+  environment:
+    POSTGRES_PASSWORD: cool-postgres-course
+  command: [
+    "-c", "logging_collector=on",
+    "-c", "log_replication_commands=on",
+    "-c", "log_min_messages=INFO",
+    "-c", "wal_level=logical",
+  ]
+
+services:
+
+  db-1:
+    container_name: db-1
+    hostname: db-1
+    <<: *pg_settings
+
+  db-2:
+    container_name: db-2
+    hostname: db-2
+    <<: *pg_settings
+
+  db-3:
+    container_name: db-3
+    hostname: db-3
+    <<: *pg_settings
