@@ -1,0 +1,67 @@
+version: '3.9'
+name: pg-dba-ha
+
+x-etcd_settings: &etcd_settings
+  image: gcr.io/etcd-development/etcd:v3.5.13
+  restart: always
+
+x-pg_settings: &pg_settings
+  build:
+    context: ..
+    dockerfile: docker/patroni-dockerfile
+  command: >
+    bash -c 'su postgres -c "source /patroni-entry.sh &&
+    patroni patroni.yaml"
+    '
+  restart: always
+
+
+services:
+  etcd-1:
+    <<: *etcd_settings
+    container_name: etcd-1
+    hostname: etcd-1
+    command:
+      - /usr/local/bin/etcd
+      - '--enable-v2=true'
+      - '--name=etcd-1'
+      - '--listen-client-urls=http://0.0.0.0:2379'
+      - '--listen-peer-urls=http://0.0.0.0:2380'
+      - '--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380'
+      - '--initial-cluster-state=new'
+      - '--initial-advertise-peer-urls=http://etcd-1:2380'
+      - '--advertise-client-urls=http://etcd-1:2379'
+
+  etcd-2:
+    <<: *etcd_settings
+    container_name: etcd-2
+    hostname: etcd-2
+    command:
+      - /usr/local/bin/etcd
+      - '--enable-v2=true'
+      - '--name=etcd-2'
+      - '--listen-client-urls=http://0.0.0.0:2379'
+      - '--listen-peer-urls=http://0.0.0.0:2380'
+      - '--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380'
+      - '--initial-cluster-state=new'
+      - '--initial-advertise-peer-urls=http://etcd-2:2380'
+      - '--advertise-client-urls=http://etcd-2:2379'
+
+
+  pg-1:
+    <<: *pg_settings
+    container_name: pg-1
+    hostname: pg-1
+
+  pg-2:
+    <<: *pg_settings
+    container_name: pg-2
+    hostname: pg-2
+
+  bcp-repo:
+    container_name: bcp-repo
+    hostname: bcp-repo
+    build:
+      context: ..
+      dockerfile: docker/backrest-dockerfile
+    command: ["sleep", "infinity"]

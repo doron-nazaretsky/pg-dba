@@ -29,4 +29,8 @@ WORKDIR /var/lib/postgresql/
 RUN apt install curl -y && \
     apt install jq -y
 
+RUN apt install pgbackrest -y && \
+    apt install openssh-server -y && \
+    apt install sshpass
+
 CMD ["sleep", "infinity"]
