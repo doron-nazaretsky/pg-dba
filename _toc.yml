@@ -1,0 +1,36 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: README.md
+parts:
+  - caption: Replication
+    chapters:
+    - file: lessons/10-replication/1-intro
+    - file: lessons/10-replication/2-ha
+      sections:
+      - file: lessons/10-replication/3-ha-architecture
+      - file: lessons/10-replication/4-ha-streaming
+      - file: lessons/10-replication/5-ha-tools
+        sections:
+        - file: lessons/10-replication/6-ha-tools-patroni
+        - file: lessons/10-replication/7-ha-tools-etcd
+      - file: lessons/10-replication/8-ha-demo
+        sections:
+        - file: lessons/10-replication/9-ha-demo-single
+        - file: lessons/10-replication/10-ha-demo-multiple
+    - file: lessons/10-replication/11-lb
+      sections:
+      - file: lessons/10-replication/12-lb-architecture
+        sections:
+        - file: lessons/10-replication/13-lb-architecture-single-write
+      - file: lessons/10-replication/14-lb-conflicts
+      - file: lessons/10-replication/15-lb-tools
+        sections:
+        - file: lessons/10-replication/16-lb-tools-ha-proxy
+      - file: lessons/10-replication/17-lb-demo
+        sections:
+        - file: lessons/10-replication/18-lb-demo-architecture
+        - file: lessons/10-replication/19-lb-demo-prerequisites
+        - file: lessons/10-replication/20-lb-demo-ha-proxy
+        - file: lessons/10-replication/21-lb-demo-play

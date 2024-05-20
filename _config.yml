@@ -1,0 +1,28 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: PostgreSQL DBA Course
+author: Doron Nazaretsky
+logo: postgres-logo.png
+
+exclude_patterns: [venv*, .vscode*]
+
+execute:
+  execute_notebooks: 'off'
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/doron-nazaretsky/pg-dba
+  branch: master
+
+html:
+  use_repository_button: true
+
+parse:
+  myst_enable_extensions:
+  - html_image

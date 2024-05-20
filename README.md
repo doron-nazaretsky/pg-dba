@@ -1,12 +1,12 @@
 # pg-dba
 Materials for PostgreSQL DBA course
 
-### Prerequisites
+## Prerequisites
 - Docker Desktop
 - Git
 - Some modern IDE, preferably VSCode
 
-### Docker
+## Docker
 - Separation of infrastructure and software
 - Separation of operation system
 - Somewhat similar to VM on steroids
@@ -19,7 +19,7 @@ Materials for PostgreSQL DBA course
     3. Run container from image
     4. Exec (enter) a container
 
-### Jupyter Notebooks
+## Jupyter Notebooks
 - Development and exploration environment
 - Easy UI
 - Supports out of the box Python, R, Scala and some others
@@ -29,7 +29,10 @@ Materials for PostgreSQL DBA course
 - Data Engineering: The main UI for databricks (SPARK) applications
 - Convenient for education - code comes with markdown
 
-### Setting the environment
+## Setting the environment
 - Git clone the project
 - Use docker compose to prepare the environment
 - Start learning through the lessons directory
+
+```{tableofcontents}
+```
