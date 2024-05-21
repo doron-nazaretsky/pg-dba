@@ -34,3 +34,10 @@ parts:
         - file: lessons/10-replication/19-lb-demo-prerequisites
         - file: lessons/10-replication/20-lb-demo-ha-proxy
         - file: lessons/10-replication/21-lb-demo-play
+    - file: lessons/10-replication/22-lr
+      sections:
+      - file: lessons/10-replication/23-lr-architecture
+      - file: lessons/10-replication/24-lr-setup
+      - file: lessons/10-replication/25-lr-maintenance
+      - file: lessons/10-replication/26-lr-related-relations
+      - file: lessons/10-replication/27-lr-caveats
