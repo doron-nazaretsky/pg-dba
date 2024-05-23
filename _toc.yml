@@ -41,3 +41,29 @@ parts:
       - file: lessons/10-replication/25-lr-maintenance
       - file: lessons/10-replication/26-lr-related-relations
       - file: lessons/10-replication/27-lr-caveats
+  - caption: Concurrency Control
+    chapters:
+    - file: lessons/11-concurrency-control/1-intro
+    - file: lessons/11-concurrency-control/2-prob-theory
+      sections:
+      - file: lessons/11-concurrency-control/3-prob-theory-anomalies
+      - file: lessons/11-concurrency-control/4-prob-theory-integrity-rules
+      - file: lessons/11-concurrency-control/5-prob-theory-isolation-levels
+    - file: lessons/11-concurrency-control/6-solution-cc
+      sections:
+      - file: lessons/11-concurrency-control/7-solution-mvcc
+      - file: lessons/11-concurrency-control/8-solution-isolation-levels
+      - file: lessons/11-concurrency-control/9-solution-implementation
+        sections:
+        - file: lessons/11-concurrency-control/10-solution-implementation-structures
+          sections:
+          - file: lessons/11-concurrency-control/11-solution-implementation-structures-xid
+          - file: lessons/11-concurrency-control/12-solution-implementation-structures-clog
+          - file: lessons/11-concurrency-control/13-solution-implementation-structures-tuple
+          - file: lessons/11-concurrency-control/14-solution-implementation-structures-snapshot
+        - file: lessons/11-concurrency-control/15-solution-implementation-visibility
+          sections:
+          - file: lessons/11-concurrency-control/16-solution-implementation-visibility-rules
+          - file: lessons/11-concurrency-control/17-solution-implementation-visibility-flow
+          - file: lessons/11-concurrency-control/18-solution-implementation-visibility-update-flow
+        - file: lessons/11-concurrency-control/19-solution-implementation-xid-wraparound
