@@ -64,6 +64,3 @@ parts:
         - file: lessons/11-concurrency-control/15-solution-implementation-visibility
           sections:
           - file: lessons/11-concurrency-control/16-solution-implementation-visibility-rules
-          - file: lessons/11-concurrency-control/17-solution-implementation-visibility-flow
-          - file: lessons/11-concurrency-control/18-solution-implementation-visibility-update-flow
-        - file: lessons/11-concurrency-control/19-solution-implementation-xid-wraparound
