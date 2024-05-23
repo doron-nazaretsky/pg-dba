@@ -49,18 +49,17 @@ parts:
       - file: lessons/11-concurrency-control/3-prob-theory-anomalies
       - file: lessons/11-concurrency-control/4-prob-theory-integrity-rules
       - file: lessons/11-concurrency-control/5-prob-theory-isolation-levels
-    - file: lessons/11-concurrency-control/6-solution-cc
+    - file: lessons/11-concurrency-control/6-cc-categories
+    - file: lessons/11-concurrency-control/7-mvcc
+    - file: lessons/11-concurrency-control/8-isolation-levels
+    - file: lessons/11-concurrency-control/9-implementation
       sections:
-      - file: lessons/11-concurrency-control/7-solution-mvcc
-      - file: lessons/11-concurrency-control/8-solution-isolation-levels
-      - file: lessons/11-concurrency-control/9-solution-implementation
+      - file: lessons/11-concurrency-control/10-implementation-structures
         sections:
-        - file: lessons/11-concurrency-control/10-solution-implementation-structures
-          sections:
-          - file: lessons/11-concurrency-control/11-solution-implementation-structures-xid
-          - file: lessons/11-concurrency-control/12-solution-implementation-structures-clog
-          - file: lessons/11-concurrency-control/13-solution-implementation-structures-tuple
-          - file: lessons/11-concurrency-control/14-solution-implementation-structures-snapshot
-        - file: lessons/11-concurrency-control/15-solution-implementation-visibility
-          sections:
-          - file: lessons/11-concurrency-control/16-solution-implementation-visibility-rules
+        - file: lessons/11-concurrency-control/11-implementation-structures-xid
+        - file: lessons/11-concurrency-control/12-implementation-structures-clog
+        - file: lessons/11-concurrency-control/13-implementation-structures-tuple
+        - file: lessons/11-concurrency-control/14-implementation-structures-snapshot
+      - file: lessons/11-concurrency-control/15-implementation-visibility
+        sections:
+        - file: lessons/11-concurrency-control/16-implementation-visibility-rules
