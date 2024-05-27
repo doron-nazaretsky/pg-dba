@@ -41,6 +41,16 @@ parts:
       - file: lessons/10-replication/25-lr-maintenance
       - file: lessons/10-replication/26-lr-related-relations
       - file: lessons/10-replication/27-lr-caveats
+      - file: lessons/10-replication/28-lr-config
+      - file: lessons/10-replication/29-lr-demo
+        sections:
+        - file: lessons/10-replication/30-lr-demo-prerequisites
+        - file: lessons/10-replication/31-lr-demo-single
+          sections:
+          - file: lessons/10-replication/32-lr-demo-single-setup
+          - file: lessons/10-replication/33-lr-demo-single-change-rows
+          - file: lessons/10-replication/34-lr-demo-single-conflicts
+        - file: lessons/10-replication/35-lr-demo-multiple
   - caption: Concurrency Control
     chapters:
     - file: lessons/11-concurrency-control/1-intro
