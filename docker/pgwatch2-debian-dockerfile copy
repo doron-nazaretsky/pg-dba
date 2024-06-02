@@ -1,0 +1,33 @@
+FROM debian:latest
+
+# Install a specific version with PostgreSQL ATP Repository
+RUN apt update && \
+    apt install procps -y && \
+    apt install exa -y && \
+    apt install nano -y && \
+    apt install -y postgresql-common && \
+    yes '' | /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh && \
+    apt update && \
+    apt install postgresql-16 -y
+
+# Add native postgres command line tools to path
+RUN echo 'export PATH=$PATH:/usr/lib/postgresql/16/bin' >> ~/.bashrc
+
+### Install pgwatch2 ###
+# Only on ARM
+# Prerequisits
+RUN apt install -y wget git
+
+# Install go
+ARG GO_INSTALLATION_URL=https://go.dev/dl/go1.22.3.linux-arm64.tar.gz
+RUN wget "$GO_INSTALLATION_URL" && \
+    rm -rf /usr/local/go && \
+    tar -C /usr/local -xzf $(basename "$GO_INSTALLATION_URL") && \
+    echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+
+# Install pgwatch2
+RUN git clone https://github.com/cybertec-postgresql/pgwatch2.git && \
+    cd pgwatch2/pgwatch2 && ./build_gatherer.sh
+
+# Install python requirments for pgwatch2 UI
+RUN apt install -y python3 python3-pip
