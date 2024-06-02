@@ -73,3 +73,24 @@ parts:
       - file: lessons/11-concurrency-control/15-implementation-visibility
         sections:
         - file: lessons/11-concurrency-control/16-implementation-visibility-rules
+  - caption: Monitoring
+    chapters:
+    - file: lessons/13-monitoring/1-intro
+    - file: lessons/13-monitoring/2-app
+      sections:
+      - file: lessons/13-monitoring/3-app-dynamic
+      - file: lessons/13-monitoring/4-app-cumulative
+      - file: lessons/13-monitoring/5-app-custom
+      - file: lessons/13-monitoring/6-app-configurations
+    - file: lessons/13-monitoring/7-platform
+    - file: lessons/13-monitoring/8-tp
+    - file: lessons/13-monitoring/9-tp-pgwatch
+      sections:
+      - file: lessons/13-monitoring/10-tp-pgwatch-view
+      - file: lessons/13-monitoring/11-tp-pgwatch-architecture
+      - file: lessons/13-monitoring/12-tp-pgwatch-demo
+        sections:
+        - file: lessons/13-monitoring/13-tp-pgwatch-demo-install
+        - file: lessons/13-monitoring/14-tp-pgwatch-demo-bootstrap-db
+        - file: lessons/13-monitoring/15-tp-pgwatch-demo-setup-configure-start
+        - file: lessons/13-monitoring/16-tp-pgwatch-demo-setup-grafana
