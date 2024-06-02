@@ -1,4 +1,3 @@
-version: '3.9'
 name: pg-dba-lb
 
 x-etcd_settings: &etcd_settings
@@ -97,10 +96,11 @@ services:
   client:
     container_name: client
     hostname: client
-    image: dpage/pgadmin4:8.3
+    image: dpage/pgadmin4:8.7
     restart: always
     ports:
       - 80:80
     environment:
       - PGADMIN_DEFAULT_EMAIL=postgres@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=cool-postgres-course
+      - PGADMIN_CONFIG_ENABLE_PSQL=True
