@@ -60,19 +60,20 @@ parts:
       - file: lessons/11-concurrency-control/4-prob-theory-integrity-rules
       - file: lessons/11-concurrency-control/5-prob-theory-isolation-levels
     - file: lessons/11-concurrency-control/6-cc-categories
-    - file: lessons/11-concurrency-control/7-mvcc
-    - file: lessons/11-concurrency-control/8-isolation-levels
+    - file: lessons/11-concurrency-control/7-isolation-levels
+    - file: lessons/11-concurrency-control/8-mvcc
     - file: lessons/11-concurrency-control/9-implementation
       sections:
       - file: lessons/11-concurrency-control/10-implementation-structures
         sections:
         - file: lessons/11-concurrency-control/11-implementation-structures-xid
         - file: lessons/11-concurrency-control/12-implementation-structures-clog
-        - file: lessons/11-concurrency-control/13-implementation-structures-tuple
-        - file: lessons/11-concurrency-control/14-implementation-structures-snapshot
-      - file: lessons/11-concurrency-control/15-implementation-visibility
+        - file: lessons/11-concurrency-control/13-implementation-structures-page
+        - file: lessons/11-concurrency-control/14-implementation-structures-tuple
+        - file: lessons/11-concurrency-control/15-implementation-structures-snapshot
+      - file: lessons/11-concurrency-control/16-implementation-visibility
         sections:
-        - file: lessons/11-concurrency-control/16-implementation-visibility-rules
+        - file: lessons/11-concurrency-control/17-implementation-visibility-rules
   - caption: Monitoring
     chapters:
     - file: lessons/13-monitoring/1-intro
