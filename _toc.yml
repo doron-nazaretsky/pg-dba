@@ -74,6 +74,24 @@ parts:
       - file: lessons/11-concurrency-control/16-implementation-visibility
         sections:
         - file: lessons/11-concurrency-control/17-implementation-visibility-rules
+  - caption: MVCC Maintenance
+    chapters:
+    - file: lessons/12-mvcc-maintenance/1-intro
+    - file: lessons/12-mvcc-maintenance/2-related-data-structures
+      sections:
+      - file: lessons/12-mvcc-maintenance/3-related-data-structures-vm
+      - file: lessons/12-mvcc-maintenance/4-related-data-structures-fsm
+    - file: lessons/12-mvcc-maintenance/5-in-page
+      sections:
+      - file: lessons/12-mvcc-maintenance/6-in-page-hands-on
+    - file: lessons/12-mvcc-maintenance/7-vacuum
+      sections:
+      - file: lessons/12-mvcc-maintenance/8-concurrent-vacuum
+        sections:
+        - file: lessons/12-mvcc-maintenance/9-concurrent-vacuum-flow
+        - file: lessons/12-mvcc-maintenance/10-concurrent-vacuum-hands-on
+      - file: lessons/12-mvcc-maintenance/11-full-vacuum
+      - file: lessons/12-mvcc-maintenance/12-pg-repack
   - caption: Monitoring
     chapters:
     - file: lessons/13-monitoring/1-intro
