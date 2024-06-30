@@ -4,6 +4,24 @@
 format: jb-book
 root: README.md
 parts:
+  - caption: Architecture
+    chapters:
+    - file: lessons/2-architecture/1-client-server
+    - file: lessons/2-architecture/2-logical-structure.ipynb
+    - file: lessons/2-architecture/3-services.ipynb
+      sections:
+      - file: lessons/2-architecture/4-services-postmaster.ipynb
+      - file: lessons/2-architecture/5-services-backends.ipynb
+      - file: lessons/2-architecture/6-services-parallel.ipynb
+      - file: lessons/2-architecture/7-services-auxiliary.ipynb
+    - file: lessons/2-architecture/8-memory.ipynb
+      sections:
+      - file: lessons/2-architecture/9-memory-areas.ipynb
+      - file: lessons/2-architecture/10-memory-hands-on.ipynb
+    - file: lessons/2-architecture/11-physical.ipynb
+      sections:
+      - file: lessons/2-architecture/12-physical-base.ipynb
+      - file: lessons/2-architecture/13-physical-tablespaces.ipynb
   - caption: Replication
     chapters:
     - file: lessons/10-replication/1-intro
