@@ -48,6 +48,19 @@ parts:
       - file: lessons/8-wal/11-files-management-deletion
       - file: lessons/8-wal/12-files-management-archive
     - file: lessons/8-wal/13-configurations
+  - caption: Backup And Restore
+    chapters:
+    - file: lessons/9-backup/1-intro.ipynb
+    - file: lessons/9-backup/2-logical.ipynb
+    - file: lessons/9-backup/3-physical.ipynb
+    - file: lessons/9-backup/4-pitr.ipynb
+    - file: lessons/9-backup/5-backup-tools.ipynb
+      sections:
+      - file: lessons/9-backup/6-backup-tools-pg-backrest.ipynb
+      - file: lessons/9-backup/7-backup-tools-pg-backrest-config.ipynb
+      - file: lessons/9-backup/8-backup-tools-pg-backrest-backup.ipynb
+      - file: lessons/9-backup/9-backup-tools-pg-backrest-recovery.ipynb
+      - file: lessons/9-backup/10-backup-tools-pg-backrest-optimizations.ipynb
   - caption: Replication
     chapters:
     - file: lessons/10-replication/1-intro
