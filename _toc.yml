@@ -30,6 +30,24 @@ parts:
     - file: lessons/4-query-path/4-query-path-rule-system
     - file: lessons/4-query-path/5-query-path-optimizer
     - file: lessons/4-query-path/6-query-path-executor
+  - caption: Write Ahead Logging (WAL)
+    chapters:
+    - file: lessons/8-wal/1-intro
+    - file: lessons/8-wal/2-architecture
+      sections:
+      - file: lessons/8-wal/3-architecture-recovery
+      - file: lessons/8-wal/4-architecture-writing
+    - file: lessons/8-wal/5-internals
+      sections:
+      - file: lessons/8-wal/6-internals-demo
+      - file: lessons/8-wal/7-internals-demo-advanced
+    - file: lessons/8-wal/8-checkpoint
+    - file: lessons/8-wal/9-files-management
+      sections:
+      - file: lessons/8-wal/10-files-management-switch
+      - file: lessons/8-wal/11-files-management-deletion
+      - file: lessons/8-wal/12-files-management-archive
+    - file: lessons/8-wal/13-configurations
   - caption: Replication
     chapters:
     - file: lessons/10-replication/1-intro
