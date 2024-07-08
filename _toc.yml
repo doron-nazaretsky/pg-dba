@@ -22,6 +22,14 @@ parts:
       sections:
       - file: lessons/2-architecture/12-physical-base
       - file: lessons/2-architecture/13-physical-tablespaces
+  - caption: Query Path
+    chapters:
+    - file: lessons/4-query-path/1-query-path
+    - file: lessons/4-query-path/2-query-path-parser
+    - file: lessons/4-query-path/3-query-path-analyzer
+    - file: lessons/4-query-path/4-query-path-rule-system
+    - file: lessons/4-query-path/5-query-path-optimizer
+    - file: lessons/4-query-path/6-query-path-executor
   - caption: Replication
     chapters:
     - file: lessons/10-replication/1-intro
