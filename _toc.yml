@@ -22,6 +22,17 @@ parts:
       sections:
       - file: lessons/2-architecture/12-physical-base
       - file: lessons/2-architecture/13-physical-tablespaces
+  - caption: Server Creation
+    chapters:
+    - file: lessons/3-server-creation/1-intro
+    - file: lessons/3-server-creation/2-installation
+    - file: lessons/3-server-creation/3-startup
+      sections:
+      - file: lessons/3-server-creation/4-startup-optimizations
+      - file: lessons/3-server-creation/5-startup-optimizations-memory
+      - file: lessons/3-server-creation/6-startup-optimizations-resources
+      - file: lessons/3-server-creation/7-startup-optimizations-huge-pages
+    - file: lessons/3-server-creation/8-shutdown
   - caption: Query Path
     chapters:
     - file: lessons/4-query-path/1-query-path
@@ -50,17 +61,17 @@ parts:
     - file: lessons/8-wal/13-configurations
   - caption: Backup And Restore
     chapters:
-    - file: lessons/9-backup/1-intro.ipynb
-    - file: lessons/9-backup/2-logical.ipynb
-    - file: lessons/9-backup/3-physical.ipynb
-    - file: lessons/9-backup/4-pitr.ipynb
-    - file: lessons/9-backup/5-backup-tools.ipynb
+    - file: lessons/9-backup/1-intro
+    - file: lessons/9-backup/2-logical
+    - file: lessons/9-backup/3-physical
+    - file: lessons/9-backup/4-pitr
+    - file: lessons/9-backup/5-backup-tools
       sections:
-      - file: lessons/9-backup/6-backup-tools-pg-backrest.ipynb
-      - file: lessons/9-backup/7-backup-tools-pg-backrest-config.ipynb
-      - file: lessons/9-backup/8-backup-tools-pg-backrest-backup.ipynb
-      - file: lessons/9-backup/9-backup-tools-pg-backrest-recovery.ipynb
-      - file: lessons/9-backup/10-backup-tools-pg-backrest-optimizations.ipynb
+      - file: lessons/9-backup/6-backup-tools-pg-backrest
+      - file: lessons/9-backup/7-backup-tools-pg-backrest-config
+      - file: lessons/9-backup/8-backup-tools-pg-backrest-backup
+      - file: lessons/9-backup/9-backup-tools-pg-backrest-recovery
+      - file: lessons/9-backup/10-backup-tools-pg-backrest-optimizations
   - caption: Replication
     chapters:
     - file: lessons/10-replication/1-intro
